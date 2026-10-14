@@ -1,0 +1,12 @@
+[submodule "external/Directional"]
+	path = external/Directional
+	url = git@github.com:avaxman/Directional.git
+[submodule "external/StreamlineTracing"]
+	path = external/StreamlineTracing
+	url = git@github.com:MarkGillespie/StreamlineTracing.git
+[submodule "external/geometry-central"]
+	path = external/geometry-central
+	url = git@github.com:nmwsharp/geometry-central.git
+[submodule "external/libigl"]
+	path = external/libigl
+	url = git@github.com:libigl/libigl.git
