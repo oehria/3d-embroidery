@@ -9,9 +9,11 @@ The inverse design code can be built via the standard cmake routine from the fol
 ```mkdir build
 cd build
 cmake ..
-make```
+make
+```
 and then executed by e.g.
-```./inv_design ../../data/scaled_beetle.obj ```
+```./inv_design ../../data/scaled_beetle.obj 
+```
 
 ## Usage
 The inverse design process can be done by essentially clicking through the interface starting from the top. Specifically,
