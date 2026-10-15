@@ -6,13 +6,15 @@ Note: This is research code released to support the reproducibility of our resul
 ## Installation
 
 The inverse design code can be built via the standard cmake routine from the folder inverse_design
-```mkdir build
+```
+mkdir build
 cd build
 cmake ..
 make
 ```
 and then executed by e.g.
-```./inv_design ../../data/scaled_beetle.obj 
+```
+./inv_design ../../data/scaled_beetle.obj 
 ```
 
 ## Usage
