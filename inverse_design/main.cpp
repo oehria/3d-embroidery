@@ -2113,14 +2113,14 @@ void myMenu()
         visualize_flattened_results(streamlines, streamline_faces, final_mask, mesh.V, mesh.F, UV, meshCut.F, uv_streamlines, uv_boundary);
         save_results_to_svg(res_dir + "pattern.svg", streamlines, streamline_faces, final_mask, mesh.V, mesh.F, UV, meshCut.F, uv_boundary);
     }
-    if (ImGui::Button("save obj with uv"))
+    /*if (ImGui::Button("save obj with uv"))
     {
         directional::writeOBJ(res_dir + "shrinking_param.obj", meshCut, UV, meshCut.F);
     }
     if (ImGui::Button("print energy"))
     {
         print_energy();
-    }
+    }*/
 
     /*if (ImGui::Checkbox("smoothed field", &show_smooth))
     {
