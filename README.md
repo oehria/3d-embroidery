@@ -17,6 +17,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 cp bin/trace-streamlines ../../../inverse_design/
 ```
+### Inverse design
 
 The inverse design code itself can be built via the standard cmake routine from the folder inverse_design
 ```
@@ -30,7 +31,7 @@ and then executed by e.g.
 ./inv_design ../../data/scaled_beetle.obj 
 ```
 
-## Usage
+## Usage of Inverse Design code
 The inverse design process can be done by essentially clicking through the interface starting from the top. Specifically,
 - click on skeletonization to initialize the flattening
 - loop operations starts the iterative field optimization process. The default parameters for this can be adjusted beforehand via the GUI right above.
