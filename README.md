@@ -17,6 +17,19 @@ and then executed by e.g.
 ./inv_design ../../data/scaled_beetle.obj 
 ```
 
+### Streamline tracer
+
+The inverse design code calls an external streamline tracer (our fork of [StreamlineTracing](https://github.com/MarkGillespie/StreamlineTracing), included as the submodule external/StreamlineTracing), which expects the binary `trace-streamlines` in the folder inverse_design. To build it, run from the repository root
+```
+cd external/StreamlineTracing
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+cp bin/trace-streamlines ../../../inverse_design/
+```
+Note that its own submodules are referenced via SSH, so cloning recursively requires a GitHub account with an SSH key set up.
+
 ## Usage
 The inverse design process can be done by essentially clicking through the interface starting from the top. Specifically,
 - click on skeletonization to initialize the flattening

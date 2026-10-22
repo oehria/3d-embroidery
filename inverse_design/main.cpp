@@ -232,7 +232,7 @@ void recompute_magnitude(const directional::CartesianField &orientation, const d
     RowVector3d vec1, vec2;
 
     for (int f = 0; f < m; f++){
-        Vector3d dir1 = orientation.extField.block(f, 0, 1, 3).normalized(); // find best match for 1st, everything else same constant offset as we have ccw field
+        RowVector3d dir1 = orientation.extField.block(f, 0, 1, 3).normalized(); // find best match for 1st, everything else same constant offset as we have ccw field
 
         double score = -1000;
         int offset = 0;
@@ -263,8 +263,6 @@ void recompute_magnitude(const directional::CartesianField &orientation, const d
             vec1 = vec2;
             vec2 = temp;
             ext_field.row(f) << vec1, vec2, -vec1, -vec2;
-            return;
-
         }
     }
     magnitude.set_extrinsic_field(ext_field);
