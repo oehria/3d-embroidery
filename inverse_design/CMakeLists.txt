@@ -13,7 +13,6 @@ set(DIRECTIONAL_EXTERNAL "${DIRECTIONAL_ROOT}/external")
 message(STATUS "DIRECTIONAL_ROOT: ${DIRECTIONAL_ROOT}")
 
 include_directories(${DIRECTIONAL_SOURCE_DIR})
-include_directories(${DIRECTIONAL_EXTERNAL}/eigen)
 
 # libigl (exact submodule version, no find_package)
 set(LIBIGL_DIR "${CMAKE_SOURCE_DIR}/../external/libigl")
