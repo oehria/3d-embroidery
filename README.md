@@ -4,18 +4,7 @@ This repository contains the code of "Fabricating 3D Shapes by Shrinking-Thread 
 Note: This is research code released to support the reproducibility of our results as well as aiding comparisons. It is not a polished or maintained software package, so the code has very limited documentation and has not been optimized for readability, efficiency, or robustness to e.g. wrong inputs. That said, we hope it’s useful for reproducing our results and for comparisons with your own methods.
 
 ## Installation
-
-The inverse design code can be built via the standard cmake routine from the folder inverse_design
-```
-mkdir build
-cd build
-cmake ..
-make
-```
-and then executed by e.g.
-```
-./inv_design ../../data/scaled_beetle.obj 
-```
+Clone the repository recursively in order to clone all submodules correcly. 
 
 ### Streamline tracer
 
@@ -28,7 +17,18 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make
 cp bin/trace-streamlines ../../../inverse_design/
 ```
-Note that its own submodules are referenced via SSH, so cloning recursively requires a GitHub account with an SSH key set up.
+
+The inverse design code itself can be built via the standard cmake routine from the folder inverse_design
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+and then executed by e.g.
+```
+./inv_design ../../data/scaled_beetle.obj 
+```
 
 ## Usage
 The inverse design process can be done by essentially clicking through the interface starting from the top. Specifically,
