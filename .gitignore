@@ -1,8 +1,8 @@
-.vscode
-.cache
 build/
 res/
-trace-streamlines
+inverse_design/trace-streamlines
+.vscode
+.cache
 __pycache__
 imgui.ini
 .polyscope.ini

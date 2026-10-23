@@ -3,6 +3,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 cmake_minimum_required(VERSION 3.16)
 
+# default to Release, Debug is very slow (Eigen) and trips Eigen assertions
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build, options are: Debug Release" FORCE)
+endif()
 
 add_executable(inv_design main.cpp)
 
