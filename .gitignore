@@ -1,0 +1,9 @@
+.vscode
+.cache
+build/
+res/
+trace-streamlines
+__pycache__
+imgui.ini
+.polyscope.ini
+.DS_Store
